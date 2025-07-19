@@ -1,0 +1,11 @@
+{
+    "unique-id": 1111,
+    "payment-date": "2025-07-19",
+    "amount": 23.55,
+    "currency": "GBP",
+    "scheme": "VISA",
+    "card-holder-details": {
+        "name": "Alex Waterfield",
+        "location": "Natland"
+    }
+}
