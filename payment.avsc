@@ -5,7 +5,7 @@
     "fields": [
         {
             "name": "unique-id",
-            "type": "int",
+            "type": "int"
         },
         {
             "name": "payment-date",
@@ -14,7 +14,7 @@
         },
         {
             "name": "amount",
-            "type": "long",
+            "type": "long"
         },
         {
             "name": "currency",
@@ -23,28 +23,33 @@
         },
         {
             "name": "scheme",
-            "type": "enum",
-            "symbols": [
-                "VISA",
-                "MASTERCARD",
-                "AMEX"
-            ]
+            "type" : {
+                "type": "enum",
+                "name": "Schemes",
+                "symbols": [
+                    "VISA",
+                    "MASTERCARD",
+                    "AMEX"
+                ]
+            }
         },
         {
-            "type": "record",
-            "namespace": "payments.avro",
-            "name": "Card-Holder-Details",
-            "fields": [
-                {
-                    "name": "name",
-                    "type": "string"
-                },
-                {
-                    "name": "location",
-                    "type": "string"
-                }
-            ]
-        },
+            "name": "cardHolderDetails",
+            "type": {
+                "type": "record",
+                "namesace": "payments.avro",
+                "name": "CardHolderDetails",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "location",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
     ]
-
 }

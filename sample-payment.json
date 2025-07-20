@@ -4,7 +4,7 @@
     "amount": 23.55,
     "currency": "GBP",
     "scheme": "VISA",
-    "card-holder-details": {
+    "cardHolderDetails": {
         "name": "Alex Waterfield",
         "location": "Natland"
     }
