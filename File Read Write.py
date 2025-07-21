@@ -3,6 +3,8 @@
 # Python regex - https://www.w3schools.com/python/python_regex.asp
 # Python functions - https://www.w3schools.com/python/python_functions.asp
 
+# The code starts at line 19 - the "def" lines are called later on in the code but not executed before line 19
+
 import re
 import random
 
