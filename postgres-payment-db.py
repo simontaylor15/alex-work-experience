@@ -24,9 +24,6 @@ insert_row_command = """INSERT INTO payment_info (
 
 select_command = "SELECT * FROM payment_info"
 
-command3 = """INSERT INTO employee_info (first_name, last_name, department_id)
-            VALUES ('Simon','Taylor',10)"""
-
 try:
     cursor = connection.cursor()
     cursor.execute(create_table_command)
