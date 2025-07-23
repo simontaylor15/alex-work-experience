@@ -36,7 +36,6 @@ try:
     cursor.execute(select_command)
     result = cursor.fetchone()
     print(result)
-    print(result)
 except (psycopg2.DatabaseError, Exception) as error:
     print(error)
 connection.close()
